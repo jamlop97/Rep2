@@ -1,7 +1,7 @@
 #include<iostream>
 #include"List.h"
 
-void mainMenu() {
+void Menu() {
 
 	std::cout << "------------Main Menu-------------" << std::endl;
 
@@ -23,7 +23,7 @@ int main()
 	std::cout << "-------Linked List Builder--------" << std::endl;
 	List myList;
 	char input = 0;
-	mainMenu();
+	Menu();
 
 	//Main linked list input loop
 	while (input != 'e')
@@ -41,7 +41,7 @@ int main()
 				std::cin >> n;
 
 				if (n == -1) {
-					mainMenu();
+					Menu();
 					break;
 				}
 
@@ -67,7 +67,7 @@ int main()
 				std::cin >> n;
 
 				if (n == -1) {
-					mainMenu();
+					Menu();
 					break;
 				}
 
