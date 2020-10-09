@@ -1,28 +1,15 @@
 #include<iostream>
 #include"List.h"
-
-void Menu() {
-
-	std::cout << "------------Main Menu-------------" << std::endl;
-
-	std::cout << "'n' - add a new list value" << std::endl;
-
-	std::cout << "'d' - delete a list value." << std::endl;
-
-	std::cout << "'r' - reverse the list order." << std::endl;
-
-	std::cout << "'p' - print the list." << std::endl;
-
-	std::cout << "'e' - exit the program." << std::endl;
-
-	std::cout << "----------------------------------" << std::endl;
-}
+#include"Menu.h"
 
 int main()
 {
-	std::cout << "-------Linked List Builder--------" << std::endl;
+	
 	List myList;
+
 	char input = 0;
+	
+	Title();
 	Menu();
 
 	//Main linked list input loop
